@@ -1,0 +1,344 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* width: 100%; */
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: white;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#Mainnav-bar {
+  /* box-sizing: border-box; */
+  padding: 1em;
+
+  background-image: linear-gradient(62deg, yellow, rebeccapurple, gold);
+  /* padding: 20px; */
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#Mainnav-bar h1 {
+  /* font-size: 150%; */
+  color: white;
+  display: inline;
+  /* background-image: url("images/gaint.jpg"); */
+  font-family: "Freckle Face", cursive;
+}
+#Mainnav-bar div img {
+  border-radius: 20%;
+}
+#Mainnav-bar div a {
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  margin: 1em;
+}
+#Mainnav-bar div a:hover {
+  color: darksalmon;
+  box-shadow: 0 0 10px darksalmon;
+  /* border-radius: 20px; */
+}
+#Mainnav-bar #navitems {
+  opacity: 1;
+}
+.firstsection {
+  width: 90%;
+  margin: auto;
+  font-size: 150%;
+  /* border-radius: 10px; */
+  font-family: "Cormorant Infant", serif;
+}
+.firstsection article p::first-letter {
+  font-size: 200%;
+}
+.firstsection article p {
+  text-align: justify;
+  text-indent: 10%;
+}
+.firstsection #arc-sec1 {
+  text-align: center;
+}
+.firstsection #arc-sec1 img {
+  padding: 0 3%;
+}
+
+/* //section 2 my clan// */
+.secondsec {
+  width: 90%;
+  margin: auto;
+
+  /* font-family: "Cormorant Infant", serif; */
+}
+.secondsec article h1 {
+  text-align: center;
+  font-size: 250%;
+  color: black;
+  text-shadow: 0 0 10px #000;
+  font-family: "Freckle Face", cursive;
+}
+.secondsec article div {
+  text-align: center;
+}
+.secondsec article div img {
+  border-radius: 50px;
+  border: 5px dashed white;
+  box-shadow: 0 0 10px orange, 0 0 20px black;
+}
+.secondsec button a {
+  text-decoration: none;
+  color: yellowgreen;
+  font-family: "Freckle Face", cursive;
+}
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+  border-radius: 20px;
+}
+
+.button1:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.secondsec article p {
+  /* font-size: 2em; */
+  font-size: 100%;
+  /* font-style: oblique; */
+  text-indent: 10%;
+  /* word-spacing: 5px; */
+  font-family: "Goblin one", cursive;
+  text-align: justify;
+}
+.secondsec article p::first-letter {
+  font-size: 200%;
+}
+.secondsec .arc2 ul {
+  /* text-align: center; */
+  /* font-size: 250%; */
+  /* color: black; */
+  font-family: "Freckle Face", cursive;
+}
+.secondsec .arc2 h1 {
+  /* border-bottom: 5px dashed aquamarine; */
+  color: darkred;
+  /* margin: 0px; */
+  text-shadow: 0 0 5px black;
+  border-radius: 60% 60% 0 0;
+  box-shadow: 0 0 10px aquamarine, 0 0 15px rebeccapurple;
+}
+.secondsec .arc2 ul a {
+  text-decoration: none;
+}
+.secondsec .arc2 ul li {
+  padding: 1%;
+}
+/* third section */
+
+.thirdsec {
+  width: 90%;
+  margin: auto;
+
+  /* font-family: "Cormorant Infant", serif; */
+}
+.thirdsec #thirdarc table {
+  font-family: "Fredoka One", cursive;
+}
+
+/* resposive text in tables */
+@media screen and (max-width: 600px) {
+  .thirdsec table {
+    font-size: 50%;
+  }
+}
+/* FOURTH SECTION */
+.fourthsec {
+  width: 90%;
+  margin: auto;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  /* text-align: center; */
+}
+/* for first article person */
+.fourthsec #thothi {
+  background-color: white;
+  border-radius: 20px;
+  margin: 0px auto;
+}
+.fourthsec #thothi h1 {
+  font-family: "Cormorant Infant", serif;
+  font-size: 40px;
+  color: fuchsia;
+}
+.fourthsec #thothi figure img {
+  border-radius: 10px;
+  border: 6px solid black;
+}
+.fourthsec #thothi figure img:hover {
+  box-shadow: 0 0 10px rebeccapurple;
+}
+/* //quote */
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
+/* second person article name */
+.fourthsec #Bhaskar {
+  background-color: white;
+  border-radius: 20px;
+}
+.fourthsec #Bhaskar h1 {
+  font-family: "Cormorant Infant", serif;
+  font-size: 40px;
+  color: fuchsia;
+}
+.fourthsec #Bhaskar figure img {
+  border-radius: 10px;
+  border: 6px solid black;
+}
+.fourthsec #Bhaskar figure img:hover {
+  box-shadow: 0 0 10px royalblue;
+}
+/* third peson article */
+.fourthsec #tony {
+  background-color: white;
+  border-radius: 20px;
+}
+.fourthsec #tony h1 {
+  font-family: "Cormorant Infant", serif;
+  font-size: 40px;
+  color: fuchsia;
+}
+.fourthsec #tony figure img {
+  border-radius: 10px;
+  border: 6px solid black;
+}
+.fourthsec #tony figure img:hover {
+  box-shadow: 0 0 10px orange;
+}
+/* forth person  article */
+.fourthsec #naresh {
+  background-color: white;
+  border-radius: 20px;
+}
+.fourthsec #naresh h1 {
+  font-family: "Cormorant Infant", serif;
+  font-size: 40px;
+  color: fuchsia;
+}
+.fourthsec #naresh figure img {
+  border-radius: 10px;
+  border: 6px solid black;
+}
+.fourthsec #naresh figure img:hover {
+  box-shadow: 0 0 10px yellow;
+}
+/* fifth person  article */
+.fourthsec #noobs {
+  background-color: white;
+  border-radius: 20px;
+}
+.fourthsec #noobs h1 {
+  font-family: "Cormorant Infant", serif;
+  font-size: 40px;
+  color: fuchsia;
+}
+.fourthsec #noobs figure img {
+  border-radius: 10px;
+  border: 6px solid black;
+}
+.fourthsec #noobs figure img:hover {
+  box-shadow: 0 0 15px darkslategrey;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+footer div a {
+  padding: 5px;
+  margin: 5px;
+  font-size: 50px;
+}
+footer a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 650px) {
+  #Mainnav-bar {
+    flex-direction: column;
+  }
+  #Mainnav-bar #navitems {
+    /* opacity: 0; */
+    display: block;
+  }
+  #Mainnav-bar #navitems a {
+    display: block;
+    /* margin: 0px; */
+    /* padding: 0px; */
+  }
+}
+/* @media screen and (min-width: 700px) and (max-width: 1100px) {
+  #Mainnav-bar {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+} */
+/* #divanim img {
+  top: 23%;
+  left: 0px;
+  position: absolute;
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+@keyframes anim {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 0 %;
+  }
+} */
