@@ -315,7 +315,6 @@ footer a {
     flex-direction: row;
   }
   #Mainnav-bar #navitems a {
-    /* opacity: 0; */
     display: inline;
   }
 }
