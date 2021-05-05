@@ -1,14 +1,14 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  /* width: 100%; */
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: white;
+  margin: 0px;
+  padding: 0px;
   position: relative;
+
   background-color: rgba(0, 0, 0, 0.1);
 }
 #Mainnav-bar {
@@ -26,10 +26,9 @@ body {
   justify-content: space-between;
 }
 #Mainnav-bar h1 {
-  /* font-size: 150%; */
   color: white;
   display: inline;
-  /* background-image: url("images/gaint.jpg"); */
+
   font-family: "Freckle Face", cursive;
 }
 #Mainnav-bar div img {
@@ -46,12 +45,10 @@ body {
   box-shadow: 0 0 10px darksalmon;
   /* border-radius: 20px; */
 }
-#Mainnav-bar #navitems {
-  opacity: 1;
-}
+
 .firstsection {
   width: 90%;
-  margin: auto;
+  margin: 10px auto;
   font-size: 150%;
   /* border-radius: 10px; */
   font-family: "Cormorant Infant", serif;
@@ -66,14 +63,11 @@ body {
 .firstsection #arc-sec1 {
   text-align: center;
 }
-.firstsection #arc-sec1 img {
-  padding: 0 3%;
-}
 
 /* //section 2 my clan// */
 .secondsec {
   width: 90%;
-  margin: auto;
+  margin: 10px auto;
 
   /* font-family: "Cormorant Infant", serif; */
 }
@@ -159,7 +153,7 @@ body {
 
 .thirdsec {
   width: 90%;
-  margin: auto;
+  margin: 10px auto;
 
   /* font-family: "Cormorant Infant", serif; */
 }
@@ -176,7 +170,7 @@ body {
 /* FOURTH SECTION */
 .fourthsec {
   width: 90%;
-  margin: auto;
+  margin: 10px auto;
   /* background-color: rgba(0, 0, 0, 0.1); */
   /* text-align: center; */
 }
@@ -302,43 +296,55 @@ footer a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 650px) {
+@media (max-width: 45em) {
   #Mainnav-bar {
     flex-direction: column;
-  }
-  #Mainnav-bar #navitems {
-    /* opacity: 0; */
-    display: block;
   }
   #Mainnav-bar #navitems a {
     display: block;
-    /* margin: 0px;  */
-    /* padding: 0px; */
+  }
+  .firstsection article p {
+    font-size: 16px;
+  }
+  .secondsec article p {
+    font-size: 10px;
   }
 }
-/* @media screen and (min-width: 700px) and (max-width: 1100px) {
+@media (min-width: 50em) {
   #Mainnav-bar {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: row;
   }
-} */
-/* #divanim img {
-  top: 23%;
-  left: 0px;
-  position: absolute;
-  animation-name: anim;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
+  #Mainnav-bar #navitems a {
+    /* opacity: 0; */
+    display: inline;
+  }
 }
-@keyframes anim {
-  from {
-    left: -10%;
+/* media queries for perefer-color-scheme */
+@media (prefers-color-schemes: light) {
+  body {
+    background-color: rgba(0, 0, 0, 0.1);
   }
-  to {
-    left: 0 %;
+}
+@media (prefers-color-schemes: dark) {
+  body {
+    background-color: #222;
+    color: #eee;
   }
-} */
+}
+/* rolling text  */
+
+#text1 {
+  color: red;
+  font-size: 1.2rem;
+  font-family: "Lobster", cursive;
+}
+#text2 {
+  color: royalblue;
+  font-size: 1.2rem;
+  font-family: "Lobster", cursive;
+}
+#text3 {
+  color: chocolate;
+  font-size: 1.2rem;
+  font-family: "Lobster", cursive;
+}
