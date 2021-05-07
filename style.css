@@ -56,6 +56,7 @@ body {
 .firstsection article p::first-letter {
   font-size: 200%;
 }
+
 .firstsection article p {
   text-align: justify;
   text-indent: 10%;
@@ -278,7 +279,23 @@ blockquote p::after {
 .fourthsec #noobs figure img:hover {
   box-shadow: 0 0 15px darkslategrey;
 }
-
+/* sixth person article */
+.fourthsec #ace {
+  background-color: white;
+  border-radius: 20px;
+}
+.fourthsec #ace h1 {
+  font-family: "Cormorant Infant", serif;
+  font-size: 40px;
+  color: fuchsia;
+}
+.fourthsec #ace figure img {
+  border-radius: 10px;
+  border: 6px solid black;
+}
+.fourthsec #ace figure img:hover {
+  box-shadow: 0 0 15px yellow;
+}
 /* footer */
 
 footer {
@@ -308,6 +325,10 @@ footer a {
   }
   .secondsec article p {
     font-size: 10px;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (min-width: 50em) {
@@ -346,4 +367,9 @@ footer a {
   color: chocolate;
   font-size: 1.2rem;
   font-family: "Lobster", cursive;
+}
+/* vedio */
+iframe {
+  text-align: center;
+  box-shadow: 0 0 10px black;
 }
