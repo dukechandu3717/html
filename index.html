@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="refresh" content="60" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- adding content theme -->
     <meta name="theme-color" content="#141318" />
@@ -51,38 +52,37 @@
     <title>My &bull;Clash Of Clans</title>
   </head>
   <body>
-    <header>
-      <nav id="Mainnav-bar">
-        <div class="animate__animated animate__bounceInLeft">
-          <img src="images/blogo.png" alt="logo" width="40px" height="40px" />
-          <h1>
-            <span id="spa" style="color: crimson; text-shadow: 0 0 10px #000">
-              CLASH
-            </span>
-            OF
-            <span style="color: crimson; text-shadow: 0 0 10px #000"
-              >CLANS</span
-            >
-          </h1>
+    <header class="iheader">
+      <div class="Navbar">
+        <div class="Navbar__Link Navbar__Link-brand" id="iknow">
+          <span
+            ><img src="images/blogo.png" alt="logo" height="40px" width="40px"
+          /></span>
+          <span style="color: crimson">CLASH</span>
+          <span style="color: white">OF</span>
+          <span style="color: crimson">CLANS</span>
         </div>
-        <div class="animate__animated animate__pulse" id="navitems">
-          <a href="" target="_blank"><span class="fa fa-home"></span> HOME</a>
-          <a href="#arc--2"><span class="fa fa-gamepad"></span> JOIN US</a>
-          <a href=""><span class="fa fa-image"></span> GALLERY</a>
-          <a href=""><span class="fa fa-envelope"></span> CONTACT US</a>
+        <div class="Navbar__Link Navbar__Link-toggle">
+          <i class="fas fa-bars"></i>
         </div>
-      </nav>
+        <nav class="Navbar__Items">
+          <div class="Navbar__Link">
+            <a href="#"><span class="fa fa-home"></span> HOME</a>
+          </div>
+          <div class="Navbar__Link">
+            <a href="#Secondsec"><span class="fa fa-gamepad"></span> JOIN US</a>
+          </div>
+          <div class="Navbar__Link">
+            <a href=""><span class="fa fa-images"></span> GALLERY</a>
+          </div>
+          <div class="Navbar__Link">
+            <a href=""> <span class="fa fa-envelope"></span> CONTACT US</a>
+          </div>
+        </nav>
+      </div>
     </header>
     <marquee behavior="scroll" direction="right" id="text1"
       >Welcome to Halo Ancients ♪(✿◡‿◡) 🎪🏴‍☠️⚔!</marquee
-    >
-
-    <marquee behavior="scroll" direction="left" id="text2"
-      >We won 3 wars!🎊 1 defeat, 5<sup>th</sup>war is going time left 15H
-      17M⏳.</marquee
-    >
-    <marquee behavior="scroll" direction="right" id="text3"
-      >Donate CC troops for Next War༼ つ ◕_◕ ༽つ!🤣💪🔥.</marquee
     >
 
     <section class="firstsection">
@@ -141,7 +141,7 @@
       </article>
     </section>
     <hr />
-    <section class="secondsec">
+    <section class="secondsec" id="Secondsec">
       <article>
         <h1>
           MY CLAN
@@ -531,6 +531,8 @@
         <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
       </div>
     </footer>
+
+    <script src="javascript.js"></script>
   </body>
 </html>
 <!-- <i class="fas fa-hand-point-right"></i> -->

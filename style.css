@@ -11,25 +11,78 @@ body {
 
   background-color: rgba(0, 0, 0, 0.1);
 }
-#Mainnav-bar {
-  /* box-sizing: border-box; */
-  padding: 1em;
-
-  background-image: linear-gradient(62deg, yellow, rebeccapurple, gold);
-  /* padding: 20px; */
-  position: sticky;
-  top: 0px;
+header {
+  padding: 0px;
+  margin: 0px;
+}
+.Navbar {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
+}
+.Navbar {
+  background-image: linear-gradient(62deg, yellow, rebeccapurple, gold);
+  display: flex;
+  padding: 16px;
+  /* font-family: cursive; */
+  color: white;
+}
+.Navbar #iknow span {
+  font-size: 1.8em;
+  font-family: 'Freckle Face', cursive;
+}
+.Navbar__Items {
+  display: flex;
+}
+.Navbar__Link {
+  /* padding-right: 8px; */
+  padding: 10px;
+}
+.Navbar__Link a {
+  text-decoration: none;
+  color: white;
+}
+.Navbar__Link a:hover {
+  color: black;
+  text-shadow: 0 0 10px gray;
+  /* border-radius: 20px; */
+}
+.Navbar__Link-toggle {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-between;
+  }
+  .Navbar__Items {
+    display: none;
+  }
+  .Navbar__Items--right {
+    margin-left: 0;
+  }
+
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    font-size: 2.1em;
+    color: black;
+    position: absolute;
+    cursor: pointer;
+  }
+  .Navbar__ToggleShow {
+    display: flex;
+  }
 }
 #Mainnav-bar h1 {
   color: white;
   display: inline;
 
-  font-family: "Freckle Face", cursive;
+  font-family: 'Freckle Face', cursive;
 }
 #Mainnav-bar div img {
   border-radius: 20%;
@@ -51,7 +104,7 @@ body {
   margin: 10px auto;
   font-size: 150%;
   /* border-radius: 10px; */
-  font-family: "Cormorant Infant", serif;
+  font-family: 'Cormorant Infant', serif;
 }
 .firstsection article p::first-letter {
   font-size: 200%;
@@ -77,7 +130,7 @@ body {
   font-size: 250%;
   color: black;
   text-shadow: 0 0 10px #000;
-  font-family: "Freckle Face", cursive;
+  font-family: 'Freckle Face', cursive;
 }
 .secondsec article div {
   text-align: center;
@@ -90,7 +143,7 @@ body {
 .secondsec button a {
   text-decoration: none;
   color: yellowgreen;
-  font-family: "Freckle Face", cursive;
+  font-family: 'Freckle Face', cursive;
 }
 .button {
   background-color: #4caf50; /* Green */
@@ -124,7 +177,7 @@ body {
   /* font-style: oblique; */
   text-indent: 10%;
   /* word-spacing: 5px; */
-  font-family: "Goblin one", cursive;
+  font-family: 'Goblin one', cursive;
   text-align: justify;
 }
 .secondsec article p::first-letter {
@@ -134,7 +187,7 @@ body {
   /* text-align: center; */
   /* font-size: 250%; */
   /* color: black; */
-  font-family: "Freckle Face", cursive;
+  font-family: 'Freckle Face', cursive;
 }
 .secondsec .arc2 h1 {
   /* border-bottom: 5px dashed aquamarine; */
@@ -159,7 +212,7 @@ body {
   /* font-family: "Cormorant Infant", serif; */
 }
 .thirdsec #thirdarc table {
-  font-family: "Fredoka One", cursive;
+  font-family: 'Fredoka One', cursive;
 }
 
 /* resposive text in tables */
@@ -182,7 +235,7 @@ body {
   margin: 0px auto;
 }
 .fourthsec #thothi h1 {
-  font-family: "Cormorant Infant", serif;
+  font-family: 'Cormorant Infant', serif;
   font-size: 40px;
   color: fuchsia;
 }
@@ -205,11 +258,11 @@ blockquote p {
 }
 
 blockquote p::before {
-  content: "\201C";
+  content: '\201C';
 }
 
 blockquote p::after {
-  content: "\201D";
+  content: '\201D';
 }
 /* second person article name */
 .fourthsec #Bhaskar {
@@ -217,7 +270,7 @@ blockquote p::after {
   border-radius: 20px;
 }
 .fourthsec #Bhaskar h1 {
-  font-family: "Cormorant Infant", serif;
+  font-family: 'Cormorant Infant', serif;
   font-size: 40px;
   color: fuchsia;
 }
@@ -234,7 +287,7 @@ blockquote p::after {
   border-radius: 20px;
 }
 .fourthsec #tony h1 {
-  font-family: "Cormorant Infant", serif;
+  font-family: 'Cormorant Infant', serif;
   font-size: 40px;
   color: fuchsia;
 }
@@ -251,7 +304,7 @@ blockquote p::after {
   border-radius: 20px;
 }
 .fourthsec #naresh h1 {
-  font-family: "Cormorant Infant", serif;
+  font-family: 'Cormorant Infant', serif;
   font-size: 40px;
   color: fuchsia;
 }
@@ -268,7 +321,7 @@ blockquote p::after {
   border-radius: 20px;
 }
 .fourthsec #noobs h1 {
-  font-family: "Cormorant Infant", serif;
+  font-family: 'Cormorant Infant', serif;
   font-size: 40px;
   color: fuchsia;
 }
@@ -285,7 +338,7 @@ blockquote p::after {
   border-radius: 20px;
 }
 .fourthsec #ace h1 {
-  font-family: "Cormorant Infant", serif;
+  font-family: 'Cormorant Infant', serif;
   font-size: 40px;
   color: fuchsia;
 }
@@ -356,20 +409,50 @@ footer a {
 #text1 {
   color: red;
   font-size: 1.2rem;
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
 }
 #text2 {
   color: royalblue;
   font-size: 1.2rem;
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
 }
 #text3 {
   color: chocolate;
   font-size: 1.2rem;
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
 }
 /* vedio */
 iframe {
   text-align: center;
   box-shadow: 0 0 10px black;
+}
+
+/* COOKIE MESSAGE */
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+
+  background-color: white;
+  color: #bbb;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.btn {
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  /* margin: auto; */
+  /* width: 50px; */
+  border: 2px solid gainsboro;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background-color: #4caf50;
+  color: white;
+  box-shadow: 0 0 10px yellowgreen;
 }
